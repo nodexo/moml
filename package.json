@@ -1,0 +1,32 @@
+{
+  "name": "moml",
+  "version": "0.1.0",
+  "description": "Minimalist Object Markup Language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodexo/moml"
+  },
+  "keywords": [
+    "object",
+    "markup",
+    "language",
+    "markdown",
+    "metadata"
+  ],
+  "author": "Michael Kortstiege",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodexo/moml/issues"
+  },
+  "homepage": "https://github.com/nodexo/moml#readme",
+  "devDependencies": {
+    "standard": "^8.5.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.7.0"
+  }
+}
