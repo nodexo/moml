@@ -19,10 +19,10 @@ MOML is kind of *YAML in disguise*.
 It uses the outstanding and mature [js-yaml YAML 1.2 parser and serializer](https://www.npmjs.com/package/js-yaml) under the hood.  
 MOML only adds a couple of neat transformations, so the markup itself can be **more visually appealing**.
 
-The MOML parser produces JSON as output.
+The MOML parser produces JSON output.
 
 
-### MOML keys 
+### Keys 
 
 They are case-insensitve and always lower case: author, Author and AUTHOR all result in **author**.  
 Pick your own visual style.
