@@ -43,9 +43,11 @@ class MOML {
         let key = k.toLowerCase()
         let value = data[k]
         if (value) {
-          value = value
-            .replace(/\n+$/, '')
-            .replace(/_[ \r\t]*\n/g, '')
+          if (typeof value === 'string')
+            value = value
+              .replace(/\n+$/, '')
+              .replace(/_[ \r\t]*\n/g, '')
+          } 
 
           let isArray = false
           if (key.match(/\*$/)) {
