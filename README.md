@@ -63,7 +63,7 @@ To prevent a **newline (\n)** supply a trailing underscore.
 
 ```
 Remarks:    This is a multiline remark.
-            You only have to youse the same indentation _
+            You only have to use the same indentation _
             on subsequent lines. 
             This improves readybility a lot!
 
@@ -71,7 +71,7 @@ Remarks:    This is a multiline remark.
 
 
 {
-    "remarks": "This is a multiline remark.\nYou only have to youse the same indentation on subsequent lines.\nThis improves readybility a lot!"
+    "remarks": "This is a multiline remark.\nYou only have to use the same indentation on subsequent lines.\nThis improves readybility a lot!"
 }
 ```
 
@@ -79,7 +79,7 @@ Remarks:    This is a multiline remark.
 
 ```
 Remarks[]:  This is a multiline remark.
-            You only have to youse the same indentation _
+            You only have to use the same indentation _
             on subsequent lines.
             This improves readybility a lot!
 
@@ -88,7 +88,7 @@ Remarks[]:  This is a multiline remark.
 {
     "remarks": [
         "This is a multiline remark.",
-        "You only have to youse the same indentation on subsequent lines.",
+        "You only have to use the same indentation on subsequent lines.",
         "This improves readybility a lot!"
     ]
 }
@@ -108,9 +108,8 @@ Date:       12/06/2016
 Tags[]:     explosive, story
 
 Remarks:    This is a multiline remark.
-            You only have to youse the same indentation _
+            Use the same indentation _
             on subsequent lines. 
-            This improves readybility a lot!
 
 =>
 
@@ -118,11 +117,12 @@ Remarks:    This is a multiline remark.
 {
     "title": "My First Day with MOML",
     "author": "Sam Text",
+    "date": "12/06/2016",
     "tags": [
         "explosive", 
         "story"
     ],
-    "remarks": "This is a multiline remark.\nYou only have to youse the same indentation on subsequent lines.\nThis improves readybility a lot!"
+    "remarks": "This is a multiline remark.\nUse the same indentation on subsequent lines."
 }
 ```
 
