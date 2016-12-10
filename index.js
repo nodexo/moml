@@ -33,7 +33,7 @@ class MOML {
     try {
       data = yaml.safeLoad(s)
     } catch (e) {
-      console.log(e.message)
+      console.log('HERE:' + e.message)
     }
 
     // Transform data
@@ -49,16 +49,8 @@ class MOML {
               .replace(/_[ \r\t]*\n/g, '')
           }
 
-          let isArray = false
-          if (key.match(/\*$/)) {
-            key = key.substring(0, key.length - 1)
-            isArray = true
-          } else if (key.match(/\[\]$/)) {
+          if (key.match(/\[\]$/)) {
             key = key.substring(0, key.length - 2)
-            isArray = true
-          }
-
-          if (isArray) {
             if (value.match(/\n/)) {
               value = value.split(/\n/g)
             } else {
