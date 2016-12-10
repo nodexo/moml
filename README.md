@@ -16,17 +16,15 @@ Spec
 
 MOML is kind of *YAML in disguise*. 
 
-It uses the outstanding and mature **js-yaml** YAML 1.2 parser and serializer under the hood.
-It only adds a couple of simple transformations, so the markup can be more *visually appealing*.
+It uses the outstanding and mature [js-yaml YAML 1.2 parser and serializer](https://www.npmjs.com/package/js-yaml) under the hood.  
+MOML only adds a couple of neat transformations, so the markup itself can be **more visually appealing**.
 
 The MOML parser produces JSON as output.
 
 
-# MOML keys 
+### MOML keys 
 
-They are case-insensitve and always lower case:  
-author, Author and AUTHOR all result in **author**.
-
+They are case-insensitve and always lower case: author, Author and AUTHOR all result in **author**.  
 Pick your own visual style.
 
 ```
@@ -58,10 +56,10 @@ Tags[]: explosive, stories
 
 ```
 
-# Multi-line
+### Multi-line
 
 Simply continue on the next line with the same indentation.  
-To prevent a *newline* use a trailing underscore.
+To prevent a **newline (\n)** supply a trailing underscore.
 
 ```
 Remarks:    This is a multiline remark.
@@ -77,7 +75,7 @@ Remarks:    This is a multiline remark.
 }
 ```
 
-# Multi-line to Array conversion
+### Multi-line to Array conversion
 
 ```
 Remarks[]:  This is a multiline remark.
@@ -97,7 +95,7 @@ Remarks[]:  This is a multiline remark.
 
 ```
 
-**It's as easy as pie, isn't it?**
+# It's as easy as pie, isn't it?
 
 
 
