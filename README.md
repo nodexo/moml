@@ -43,14 +43,14 @@ Author: Sam Text
 Just suffix the respective keys with square brackets. That's all.
 
 ```
-Tags[]: explosive, stories
+Tags[]: explosive, story
 
 =>
 
 {
     "tags": [
         "explosive", 
-        "stories"
+        "story"
     ]
 }
 
@@ -95,8 +95,40 @@ Remarks[]:  This is a multiline remark.
 
 ```
 
-# It's as easy as pie, isn't it?
+### Full example for e.g. markdown metadata
 
+
+```
+Title:      My First Day with MOML
+
+Author:     Sam Text
+
+Date:       12/06/2016
+
+Tags[]:     explosive, story
+
+Remarks:    This is a multiline remark.
+            You only have to youse the same indentation _
+            on subsequent lines. 
+            This improves readybility a lot!
+
+=>
+
+
+{
+    "title": "My First Day with MOML",
+    "author": "Sam Text",
+    "tags": [
+        "explosive", 
+        "story"
+    ],
+    "remarks": "This is a multiline remark.\nYou only have to youse the same indentation on subsequent lines.\nThis improves readybility a lot!"
+}
+```
+
+
+It's as easy as pie, isn't it?
+------------------------------
 
 
 License
