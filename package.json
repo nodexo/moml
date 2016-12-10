@@ -1,6 +1,6 @@
 {
   "name": "moml",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Minimalist Object Markup Language.",
   "main": "index.js",
   "scripts": {
