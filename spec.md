@@ -7,7 +7,7 @@ MOML is kind of *"YAML in disguise"*.
 It uses the [js-yaml YAML 1.2 parser and serializer](https://www.npmjs.com/package/js-yaml) under the hood to parse the input data.   
 MOML itself only adds a couple of neat transformations - so the **markup** can be **visually appealing**.
 
-MOML produces JSON output.
+The MOML parser produces JSON output.
 
 
 ### Key/Value 
