@@ -12,8 +12,8 @@ The MOML parser produces JSON output.
 
 ### Key/Value 
 
-Keys are case-insensitve and always lower case in the resulting JSON: author, Author and AUTHOR all end as **author**.  
-For values apply the same rules as in [YAML](http://www.yaml.org/spec/1.2/spec.html).
+Keys are case-insensitve and always lower case in the resulting JSON: author, Author and AUTHOR all end as key **"author"**.  
+For values the same rules as in [YAML](http://www.yaml.org/spec/1.2/spec.html) apply.
 
 Example:
 ```
@@ -47,15 +47,15 @@ Result:
 
 ```
 
-### Multiline
+### Multi-line
 
 Simply continue writing on the next line with the same level of indentation.  
-To prevent a **newline (\n)** supply a trailing underscore.
+To prevent a **newline \n** supply a trailing underscore.
 
 
 Example:
 ```
-Remarks:    This is a multiline remark.
+Remarks:    This is a multi-line remark.
             You only have to use the same indentation _
             on subsequent lines. 
             This improves readybility a lot!
@@ -64,18 +64,18 @@ Remarks:    This is a multiline remark.
 Result:
 ```
 {
-    "remarks": "This is a multiline remark.\nYou only have to use the same indentation on subsequent lines.\nThis improves readybility a lot!"
+    "remarks": "This is a multi-line remark.\nYou only have to use the same indentation on subsequent lines.\nThis improves readybility a lot!"
 }
 ```
 
-### Multiline to Array conversion
+### Multi-line to Array Conversion
 
-Quite self explanatory :)
+This is quite self explanatory.
 
 
 Example:
 ```
-Remarks[]:  This is a multiline remark.
+Remarks[]:  This is a multi-line remark.
             Use the same indentation _
             on subsequent lines.
             This improves readybility a lot!
@@ -85,7 +85,7 @@ Result:
 ```
 {
     "remarks": [
-        "This is a multiline remark.",
+        "This is a multi-line remark.",
         "Use the same indentation on subsequent lines.",
         "This improves readybility a lot!"
     ]
@@ -93,7 +93,7 @@ Result:
 
 ```
 
-### Full example 
+### Full Example 
 
 Use it e.g. in combination with [markdown-data](https://www.npmjs.com/package/markdown-data)
 
@@ -125,5 +125,5 @@ Result:
 }
 ```
 
-It's as easy as pie, isn't it?
-------------------------------
+It's as easy as pie, isn't it? :)
+---------------------------------
