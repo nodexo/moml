@@ -14,19 +14,19 @@ Minimalist Object Markup Language.
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 
-**Please read the [MOML Spec](https://github.com/nodexo/moml/blob/master/spec.md), too!**
-
-
 Installation
 ------------
 
     $ npm install moml
 
 
+**Please read the short [MOML Spec](https://github.com/nodexo/moml/blob/master/spec.md), too!**
+
+
 Usage
 ------
 
-```
+```javascript
 const moml = require('moml')
 
 let data = `
