@@ -4,7 +4,10 @@
   "description": "Minimalist Object Markup Language.",
   "main": "index.js",
   "scripts": {
-    "test": "standard & tap test/*.js --coverage --reporter spec --coverage-report=lcov"
+    "pretest": "npm install codeclimate-test-reporter -g",
+    "test": "standard & tap test/*.js --coverage --reporter spec",
+    "posttest": "tap --coverage-report=lcov && codeclimate-test-reporter < ./coverage/lcov.info",
+    "test-local": "standard & tap test/*.js --coverage --reporter spec"
   },
   "repository": {
     "type": "git",
