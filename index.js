@@ -44,7 +44,7 @@ class MOML {
             .replace(/_[ \r\t]*\n/g, '')
         }
 
-        if (key.match(/\[\]$/)) {
+        if (key.match(/\[]$/)) {
           key = key.substring(0, key.length - 2)
           if (value.match(/\n/)) {
             value = value.split(/\n/g)
