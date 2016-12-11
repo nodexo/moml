@@ -2,18 +2,18 @@
 MOML Spec
 =========
 
-MOML is kind of *YAML in disguise*. 
+MOML is kind of *"YAML in disguise"*. 
 
-It uses the outstanding and mature [js-yaml YAML 1.2 parser and serializer](https://www.npmjs.com/package/js-yaml) under the hood.  
-MOML only adds a couple of neat transformations, so the markup itself can be **more visually appealing**.
+It uses the [js-yaml YAML 1.2 parser and serializer](https://www.npmjs.com/package/js-yaml) under the hood to parse the input data.   
+MOML itself only adds a couple of neat transformations - so the **markup** can be **visually appealing**.
 
-The MOML parser produces JSON output.
+MOML produces JSON output.
 
 
-### Keys 
+### Key/Value 
 
 Keys are case-insensitve and always lower case in the parsed result: author, Author and AUTHOR all result in **author**.  
-So pick your own visual style!
+For values apply the same rules as in [YAML](http://www.yaml.org/spec/1.2/spec.html).
 
 Example:
 ```
@@ -93,14 +93,15 @@ Result:
 
 ```
 
-### Full example for usage in e.g. *markdown (meta)data*
+### Full example 
+
+Use it e.g. in combination with [markdown-data](https://www.npmjs.com/package/markdown-data)
+
 
 Data:
 ```
 Title:      My First Day with MOML
-
 Author:     Sam Text
-
 Date:       12/06/2016
 
 Tags[]:     explosive, story
