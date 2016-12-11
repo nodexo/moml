@@ -12,7 +12,7 @@ The MOML parser produces JSON output.
 
 ### Key/Value 
 
-Keys are case-insensitve and always lower case in the parsed result: author, Author and AUTHOR all result in **author**.  
+Keys are case-insensitve and always lower case in the resulting JSON: author, Author and AUTHOR all end as **author**.  
 For values apply the same rules as in [YAML](http://www.yaml.org/spec/1.2/spec.html).
 
 Example:
