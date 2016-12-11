@@ -20,7 +20,7 @@ Installation
     $ npm install moml
 
 
-**Please read the short [MOML Spec](https://github.com/nodexo/moml/blob/master/spec.md), too!**
+**Please also read the short [MOML Spec](https://github.com/nodexo/moml/blob/master/spec.md)!**
 
 
 Usage
@@ -43,7 +43,8 @@ Remarks:    This is a multiline remark.
 
 let result = moml.parse(data)
 console.log(JSON.stringify(result, null, 4))
-/*
+
+/* 
 {
     "title": "My First Day with MOML",
     "author": "Sam Text",
