@@ -14,13 +14,48 @@ Minimalist Object Markup Language.
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 
-[MOML Spec](https://github.com/nodexo/moml/blob/master/spec.md)
+**Please read the [MOML Spec](https://github.com/nodexo/moml/blob/master/spec.md), too!**
 
 
 Installation
 ------------
 
     $ npm install moml
+
+
+Usage
+------
+
+```
+const moml = require('moml')
+
+let data = `
+Title:      My First Day with MOML
+Author:     Sam Text
+Date:       12/06/2016
+
+Tags[]:     explosive, story
+
+Remarks:    This is a multiline remark.
+            Use the same indentation _
+            on subsequent lines. 
+`
+
+let result = moml.parse(data)
+console.log(JSON.stringify(result, null, 4))
+/*
+{
+    "title": "My First Day with MOML",
+    "author": "Sam Text",
+    "date": "12/06/2016",
+    "tags": [
+        "explosive", 
+        "story"
+    ],
+    "remarks": "This is a multiline remark.\nUse the same indentation on subsequent lines."
+}
+*/
+```
 
 
 License
