@@ -14,11 +14,11 @@
     "url": "git+https://github.com/nodexo/moml"
   },
   "keywords": [
-    "object",
-    "markup",
-    "language",
+    "metadata",
     "markdown",
-    "metadata"
+    "language",
+    "markup",
+    "object"
   ],
   "author": "Michael Kortstiege",
   "license": "ISC",
