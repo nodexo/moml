@@ -4,7 +4,7 @@
   "description": "Minimalist Object Markup Language.",
   "main": "index.js",
   "scripts": {
-    "test": "standard & tap test/*.js --coverage --reporter spec",
+    "test": "standard & tap test/*.js --coverage --reporter spec --coverage-report=lcov"
   },
   "repository": {
     "type": "git",
