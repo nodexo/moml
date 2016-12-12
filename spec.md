@@ -5,14 +5,14 @@ MOML Spec
 MOML is kind of *"YAML in disguise"*. 
 
 It uses the [js-yaml YAML 1.2 parser and serializer](https://www.npmjs.com/package/js-yaml) under the hood to parse the input data.   
-MOML itself only adds a couple of neat transformations - so the **markup** can be **visually appealing**.
+**MOML** itself only adds a couple of neat transformations, so you can use **a simpler and more handsome markup**.
 
 The MOML parser produces JSON output.
 
 
 ### Key/Value 
 
-Keys are case-insensitve and always lower case in the resulting JSON: author, Author and AUTHOR all end as key **"author"**.  
+Keys are case-insensitve and always lower case in the resulting JSON: author, Author and AUTHOR all result in **"author"**.  
 For values the same rules as in [YAML](http://www.yaml.org/spec/1.2/spec.html) apply.
 
 Example:
@@ -29,7 +29,8 @@ Result:
 
 ### Arrays
 
-Just suffix the respective key with square brackets. That's all.
+Just suffix the respective key with square brackets. 
+The value is split at the commas then. That's all.
 
 Example:
 ```
@@ -49,8 +50,8 @@ Result:
 
 ### Multi-line
 
-Simply continue writing on the next line with the same level of indentation.  
-To prevent a **newline \n** supply a trailing underscore.
+Simply continue writing on the next line at the same level of indentation.  
+To prevent a **\n** *(newline)* just supply a trailing underscore.
 
 
 Example:
